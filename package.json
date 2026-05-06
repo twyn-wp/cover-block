@@ -1,0 +1,50 @@
+{
+	"name": "twyn-cover-block",
+	"scripts": {
+		"start": "wp-scripts start  --progress",
+		"build": "wp-scripts build  --progress",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"lint:md": "wp-scripts lint-md-docs",
+		"packages-update": "wp-scripts packages-update",
+		"plugin-zip": "wp-scripts plugin-zip",
+		"prepare": "husky",
+		"lint-staged": "lint-staged"
+	},
+	"lint-staged": {
+		"*.{js,json,scss,css}": [
+			"npm run format"
+		],
+		"*.{js,json}": [
+			"npm run lint:js"
+		],
+		"*.{scss,css}": [
+			"npm run lint:css"
+		],
+		"*.php": [
+			"composer phpcbf",
+			"composer phpcs"
+		],
+		"*.md": [
+			"npm run lint:md"
+		]
+	},
+	"type": "module",
+	"devDependencies": {
+		"@commitlint/cli": "^20.5.3",
+		"@commitlint/config-conventional": "^20.5.3",
+		"@wordpress/blob": "^4.45.0",
+		"@wordpress/block-editor": "^15.18.0",
+		"@wordpress/blocks": "^15.18.0",
+		"@wordpress/components": "^33.0.0",
+		"@wordpress/element": "^6.45.0",
+		"@wordpress/i18n": "^6.18.0",
+		"@wordpress/scripts": "^32.1.0",
+		"husky": "^9.1.7",
+		"lint-staged": "^17.0.2"
+	},
+	"dependencies": {
+		"@wordpress/icons": "^13.0.0"
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "twyn/cover",
+	"version": "0.1.0",
+	"title": "Twyn Cover",
+	"category": "media",
+	"description": "Creates an overlay on images or videos.",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "twyn-cover-block",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}
