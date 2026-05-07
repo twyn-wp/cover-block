@@ -14,14 +14,15 @@ const tagNames = metadata.attributes.tagName.enum;
 
 export const TAG_NAME_OPTIONS = tagNames.map( ( tag ) => {
 	// Add "Default" to the label for the default div tag (same behavior as core/group)
+	let label = '';
 	if ( tag === 'div' ) {
-		tag = `Default (<${ tag }>)`;
+		label = __( 'Default', 'twyn-cover-block' ) + ` (<${ tag }>)`;
 	} else {
-		tag = `<${ tag }>`;
+		label = `<${ tag }>`;
 	}
 
 	return {
-		label: tag,
+		label,
 		value: tag,
 	};
 } );
@@ -59,6 +60,13 @@ export const TAG_HELP_TEXT = Object.fromEntries(
 				break;
 
 			case 'article':
+				text = __(
+					"The <aside> element should represent a portion of a document whose content is only indirectly related to the document's main content.",
+					'twyn-cover-block'
+				);
+				break;
+
+			case 'aside':
 				text = __(
 					"The <aside> element should represent a portion of a document whose content is only indirectly related to the document's main content.",
 					'twyn-cover-block'
