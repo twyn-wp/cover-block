@@ -10,6 +10,21 @@
 	"supports": {
 		"html": false
 	},
+	"attributes": {
+		"tagName": {
+			"type": "string",
+			"enum": [
+				"div",
+				"header",
+				"main",
+				"section",
+				"article",
+				"aside",
+				"footer"
+			],
+			"default": "div"
+		}
+	},
 	"textdomain": "twyn-cover-block",
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",
