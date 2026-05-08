@@ -34,8 +34,8 @@ export default function Edit( { attributes, setAttributes } ) {
 			<InspectorAdvancedControls>
 				<SelectControl
 					__next40pxDefaultSize
-					__nextHasNoMarginBottom="true"
-					label="HTML-Element"
+					__nextHasNoMarginBottom
+					label={ __( 'HTML element', 'twyn-cover-block' ) }
 					value={ tagName }
 					options={ TAG_NAME_OPTIONS }
 					onChange={ onChangeTagName }
