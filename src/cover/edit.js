@@ -21,6 +21,9 @@ export default function Edit( { attributes, setAttributes } ) {
 	// * Derived State
 	const TagName = tagName;
 
+	// * Block Props
+	const blockProps = useBlockProps();
+
 	// * Handlers
 	const onChangeTagName = ( newTagName ) => {
 		setAttributes( { tagName: newTagName } );
@@ -39,7 +42,7 @@ export default function Edit( { attributes, setAttributes } ) {
 					help={ TAG_HELP_TEXT[ tagName ] }
 				/>
 			</InspectorAdvancedControls>
-			<TagName { ...useBlockProps() }>
+			<TagName { ...blockProps }>
 				{ __( 'Hello from edit.js', 'twyn-cover-block' ) }
 			</TagName>
 		</>
