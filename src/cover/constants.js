@@ -61,7 +61,7 @@ export const TAG_HELP_TEXT = Object.fromEntries(
 
 			case 'article':
 				text = __(
-					"The <aside> element should represent a portion of a document whose content is only indirectly related to the document's main content.",
+					'The <article> element should represent a self-contained, syndicatable portion of the document.',
 					'twyn-cover-block'
 				);
 				break;
