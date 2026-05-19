@@ -1,1 +1,4 @@
-CHANGELOG.md
+/vendor/
+/node_modules/
+/build/
+/dist/

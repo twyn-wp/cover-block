@@ -86,3 +86,12 @@ export const TAG_HELP_TEXT = Object.fromEntries(
 		return [ key, text ];
 	} )
 );
+
+// Keep these values in sync with style.scss
+export const DEFAULT_MIN_HEIGHT = '250px';
+export const MIN_HEIGHT_VAR = '--twyn-cover-min-height';
+
+export const MIN_HEIGHT_UNITS = [
+	{ value: 'px', label: 'px' },
+	{ value: 'rem', label: 'rem' },
+];
