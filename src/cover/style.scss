@@ -7,4 +7,5 @@
 
 .wp-block-twyn-cover {
 	border: 1px solid #000;
+	min-height: var(--twyn-cover-min-height, 250px);
 }

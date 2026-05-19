@@ -23,6 +23,9 @@
 				"footer"
 			],
 			"default": "div"
+		},
+		"minHeight": {
+			"type": "string"
 		}
 	},
 	"textdomain": "twyn-cover-block",
